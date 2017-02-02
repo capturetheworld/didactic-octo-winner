@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my blog</title>
+</head>
+<body>
+	<h1>barebones</h1>
+	<h3>Description of my blog</h3>
+
+	<hr>
+
+	<% for(var i=0;i<posts.length;i++){ %>
+		<h3><a href="/posts/<%= posts[i]._id %>"><%= posts[i].title %></a></h3>
+		<p><%= posts[i].message %></p>
+	<% } %>
+
+	<a href="/">home</a>
+	<a href="/post">new post</a>
+</body>
+</html>
